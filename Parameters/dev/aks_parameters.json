@@ -1,0 +1,57 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "resourceName": {
+            "value": "aks-rest-southcentral"
+        },
+        "location": {
+            "value": "southcentralus"
+        },
+        "dnsPrefix": {
+            "value": "aks-rest-southcentral-dns"
+        },
+        "kubernetesVersion": {
+            "value": "1.26.6"
+        },
+        "networkPlugin": {
+            "value": "kubenet"
+        },
+        "enableRBAC": {
+            "value": true
+        },
+        "nodeResourceGroup": {
+            "value": "MC_rg-k8s-dev-southcentral_aks-rest-southcentral_southcentralus"
+        },
+        "upgradeChannel": {
+            "value": "patch"
+        },
+        "adminGroupObjectIDs": {
+            "value": []
+        },
+        "disableLocalAccounts": {
+            "value": false
+        },
+        "azureRbac": {
+            "value": false
+        },
+        "enablePrivateCluster": {
+            "value": false
+        },
+        "enableAzurePolicy": {
+            "value": false
+        },
+        "enableSecretStoreCSIDriver": {
+            "value": false
+        },
+        "vmssNodePool": {
+            "value": true
+        },
+        "acrName": {
+            "value": "crkubedev"
+        },
+        "acrResourceGroup": {
+            "value": "rg-containers-dev-southcentral"
+        }
+    }
+}
