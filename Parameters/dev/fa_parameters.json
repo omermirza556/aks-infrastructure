@@ -1,0 +1,51 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "subscriptionId": {
+            "value": "34aad47b-cd67-4180-b986-cdcb74adb5e8"
+        },
+        "name": {
+            "value": "kubrouter-dev-southcentral"
+        },
+        "location": {
+            "value": "South Central US"
+        },
+        "ftpsState": {
+            "value": "FtpsOnly"
+        },
+        "storageAccountName": {
+            "value": "rgfuncdevsouthcentr9c33"
+        },
+        "sku": {
+            "value": "Dynamic"
+        },
+        "skuCode": {
+            "value": "Y1"
+        },
+        "workerSize": {
+            "value": "0"
+        },
+        "workerSizeId": {
+            "value": "0"
+        },
+        "numberOfWorkers": {
+            "value": "1"
+        },
+        "use32BitWorkerProcess": {
+            "value": false
+        },
+        "linuxFxVersion": {
+            "value": "Python|3.10"
+        },
+        "hostingPlanName": {
+            "value": "ASP-rgfuncdevsouthcentral-90ea"
+        },
+        "serverFarmResourceGroup": {
+            "value": "rg-func-dev-southcentral"
+        },
+        "alwaysOn": {
+            "value": false
+        }
+    }
+}
