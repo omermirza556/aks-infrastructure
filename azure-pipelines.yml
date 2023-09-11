@@ -7,7 +7,7 @@ trigger:
 - main
 
 pool:
-  name: self-hosted
+  vmImage: ubuntu-latest
 
 steps:
 - script: echo Processing...
