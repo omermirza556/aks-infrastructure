@@ -12,15 +12,12 @@ pool:
 steps:
 - script: echo Processing...
   displayName: 'Run a one-line script'
-- task: UniversalPackages@0
-  inputs:
-    command: 'publish'
-    publishDirectory: '$(Build.ArtifactStagingDirectory)'
-    feedsToUsePublish: 'internal'
-    vstsFeedPublish: 'e1a2da8a-011d-49e3-8afa-2f27fe44a07c/b9ec88ec-f90c-4cf6-9c79-777658b560ae'
-    vstsFeedPackagePublish: 'azure-infrastructure'
-    versionOption: 'patch'
 
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'Container'
 - script: |
     echo Complete
   displayName: 'Run a one-line script'
